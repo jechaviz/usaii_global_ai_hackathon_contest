@@ -1,0 +1,2 @@
+first_name,email,student_level,school_or_program,eligibility_status,devpost_status,qualifier_rehearsal_status,notes
+PRIVATE_REQUIRED,PRIVATE_REQUIRED,PRIVATE_REQUIRED,PRIVATE_REQUIRED,unverified,not_registered,not_scheduled,keep_private_do_not_commit_filled_file

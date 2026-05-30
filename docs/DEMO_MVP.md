@@ -6,6 +6,8 @@ Core path: `C:\git\v_projects\usaii_global_ai_hackathon`
 
 Local URL: `http://127.0.0.1:4197/`
 
+Public URL: `https://jechaviz.github.io/usaii_global_ai_hackathon_web/`
+
 ## User Flow
 
 1. Open the coach workspace.
@@ -36,6 +38,7 @@ Local URL: `http://127.0.0.1:4197/`
 
 - `evidence/web_demo_desktop.png`
 - `evidence/web_demo_mobile.png`
+- `https://jechaviz.github.io/usaii_global_ai_hackathon_web/`
 - `C:\git\websites\usaii_global_ai_hackathon\out\usaii-demo-desktop.png`
 - `C:\git\websites\usaii_global_ai_hackathon\out\usaii-demo-mobile.png`
 

@@ -31,7 +31,7 @@ aprendizaje, portfolio y oportunidades reales.
 ## Estado prod local
 
 Estado: `ready_for_student_partner`
-Version competitiva: `v1.1.0`
+Version competitiva: `v1.2.1`
 
 Entregables principales:
 
@@ -45,7 +45,11 @@ Entregables principales:
 - Video outline: `docs/VIDEO_OUTLINE.md`
 - Risks: `docs/RISKS.md`
 - Submission packet: `submission/SUBMISSION_PACKET.md`
+- Student-partner outreach: `submission/student_partner_outreach_gmail_draft.md`
+- Account ops: `docs/ACCOUNT_OPS_RUNBOOK.md`
 - Automatizacion WAIBAv: `automation/waiba/`
+
+Demo publica: `https://jechaviz.github.io/usaii_global_ai_hackathon_web/`
 
 Demo local: `http://127.0.0.1:4197/`
 

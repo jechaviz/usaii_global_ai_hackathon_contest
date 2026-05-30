@@ -4,7 +4,7 @@ Fecha de creacion: 2026-05-30
 Track interno: `student_partner_track`
 Producto: `AI Study-to-Work Coach`
 Estado local: `ready_for_student_partner`
-Version competitiva: `v1.1.0`
+Version competitiva: `v1.2.1`
 
 ## Objetivo
 
@@ -35,6 +35,8 @@ USAII Global AI Hackathon 2026.
 - Video outline 3-5 min: `docs/VIDEO_OUTLINE.md`.
 - Risks: `docs/RISKS.md`.
 - Submission packet y form maps: `submission/`.
+- Student partner outreach kit: `submission/student_partner_outreach_gmail_draft.md`.
+- Account ops runbook: `docs/ACCOUNT_OPS_RUNBOOK.md`.
 - WAIBAv playbooks con final-submit gate: `automation/waiba/`.
 - Evidence pack: `evidence/`.
 
@@ -50,6 +52,9 @@ USAII Global AI Hackathon 2026.
 - Product core: `v test .` pass.
 - Product core generator: `v run .\cmd\usaii generate` pass.
 - Web smoke: `npx playwright test --reporter=line` pass.
+- Public demo: `https://jechaviz.github.io/usaii_global_ai_hackathon_web/` HTTP 200.
+- WAIBAv debug receipts: Devpost, qualifier, Gmail outreach pass.
+- Veloclaw receipts: `evidence/veloclaw_state/receipts.ndjson`.
 - Judge readiness: 94/100.
 - Decision delta: +29.
 - Risk reduction: 71%.
@@ -77,6 +82,7 @@ Receipts:
 - [x] Risks listos.
 - [x] Submission payloads y form maps listos.
 - [x] Automatizacion WAIBAv preparada con no-submit gate.
+- [x] Student partner outreach draft y refs de cuenta preparados.
 - [x] QA local y evidence screenshots capturados.
 - [ ] Equipo real de 2-5 estudiantes elegibles confirmado.
 - [ ] Registro Devpost completado por miembros elegibles.

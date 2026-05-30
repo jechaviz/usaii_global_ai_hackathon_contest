@@ -54,9 +54,11 @@ Public demo data is synthetic. Final build may use public datasets, simulated
 data, or student-consented inputs. All AI tools and coding assistants must be
 disclosed in Devpost.
 
-## Links To Fill Later
+## Links
 
-- Public demo URL: `REPLACE_WITH_PUBLIC_DEMO_URL`
-- Source repo URL: `REPLACE_WITH_PUBLIC_REPO_URL`
+- Public demo URL: `https://jechaviz.github.io/usaii_global_ai_hackathon_web/`
+- Source repo URL: `https://github.com/jechaviz/usaii_global_ai_hackathon`
+- Web repo URL: `https://github.com/jechaviz/usaii_global_ai_hackathon_web`
+- Contest evidence URL: `https://github.com/jechaviz/usaii_global_ai_hackathon_contest`
 - Video URL: `REPLACE_WITH_3_TO_5_MIN_VIDEO_URL`
 - Qualifier approval code: `PRIVATE_REQUIRED_AFTER_QUALIFIER`

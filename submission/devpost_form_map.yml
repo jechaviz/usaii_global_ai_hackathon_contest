@@ -16,8 +16,8 @@ fields:
     - WAIBAv
     - Devpost
   description_file: submission/SUBMISSION_PACKET.md
-  source_repo: REPLACE_WITH_PUBLIC_REPO_URL
-  demo_url: REPLACE_WITH_PUBLIC_DEMO_URL
+  source_repo: https://github.com/jechaviz/usaii_global_ai_hackathon
+  demo_url: https://jechaviz.github.io/usaii_global_ai_hackathon_web/
   video_url: REPLACE_WITH_3_TO_5_MIN_VIDEO_URL
   qualifier_code: PRIVATE_REQUIRED_AFTER_QUALIFIER
   track_selection: highest_education_level_represented_by_team

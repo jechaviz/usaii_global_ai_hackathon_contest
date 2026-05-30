@@ -1,0 +1,57 @@
+metadata:
+  name: usaii-gmail-outreach-draft
+  description: Prepare Gmail student-partner outreach draft and stop before send.
+
+variables:
+  PROJECT_DIR: "C:/git/v_projects/contests/worth_it/usaii_global_ai_hackathon"
+  OUTPUT_DIR: "${PROJECT_DIR}/automation/evidence/gmail-outreach"
+  GMAIL_URL: "https://mail.google.com/mail/u/0/#inbox?compose=new"
+  OWNER_EMAIL: "jesus.cgalaviz@gmail.com"
+
+steps:
+  debug:
+    - name: Ensure output directory
+      action: FS.EnsureDir
+      params:
+        path: "${OUTPUT_DIR}"
+
+    - name: Validate outreach draft exists
+      action: Shell.Run
+      params:
+        command: "powershell -NoProfile -Command \"if (!(Test-Path '${PROJECT_DIR}/submission/student_partner_outreach_gmail_draft.md')) { exit 2 }; if (!(Test-Path '${PROJECT_DIR}/submission/student_partner_outreach_targets.template.csv')) { exit 3 }\""
+        workdir: "${PROJECT_DIR}"
+
+    - name: Write dry-run receipt
+      action: FS.WriteText
+      params:
+        path: "${OUTPUT_DIR}/gmail_outreach_draft_receipt.md"
+        overwrite: true
+        text: |
+          # USAII Gmail Outreach Draft Receipt
+
+          Account alias: ${OWNER_EMAIL}
+          Mode: debug dry-run
+          Draft: ${PROJECT_DIR}/submission/student_partner_outreach_gmail_draft.md
+          Target template: ${PROJECT_DIR}/submission/student_partner_outreach_targets.template.csv
+          Gmail compose helper: ${PROJECT_DIR}/automation/scripts/open_edge_gmail_outreach.ps1
+          Send allowed: false
+
+          Required before production:
+          - Real student prospect address in a private local copy only.
+          - Operator review of every recipient and message body.
+          - No private eligibility proof in email body unless the student sends it directly.
+
+    - action: Note
+      params:
+        text: "USAII Gmail outreach draft prepared. Debug mode does not open browser or send."
+
+  prod:
+    - name: Open Gmail compose in visible browser
+      action: Browser.Open
+      params:
+        url: "${GMAIL_URL}"
+        headless: false
+
+    - action: Note
+      params:
+        text: "Use the Edge Gmail helper when the primary logged-in Edge session is required. Stop before Send unless the operator explicitly authorizes the exact recipient."

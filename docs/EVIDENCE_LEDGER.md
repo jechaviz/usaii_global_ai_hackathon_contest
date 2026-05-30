@@ -10,8 +10,12 @@
 | Judge readiness | done | `evidence/judge_readiness.json` | Rubric score 94/100. |
 | Judge mode markdown | done | `docs/JUDGE_MODE.generated.md` | Generated judge walkthrough. |
 | Devpost payload preview | done | `evidence/devpost_payload_preview_v.json` | Dry-run only. |
+| Public web demo | done | `https://jechaviz.github.io/usaii_global_ai_hackathon_web/` | GitHub Pages workflow deployed from web repo. |
 | Web desktop screenshot | done | `evidence/web_demo_desktop.png` | Playwright smoke receipt. |
 | Web mobile screenshot | done | `evidence/web_demo_mobile.png` | Playwright smoke receipt. |
 | Qualifier template | done | `submission/qualifier_response_template.md` | Redacted, no private code. |
 | WAIBAv Devpost receipt | done | `automation/evidence/devpost-draft/devpost_draft_receipt.md` | Debug dry-run, no browser submit. |
 | WAIBAv qualifier receipt | done | `automation/evidence/qualifier-draft/qualifier_draft_receipt.md` | Debug dry-run, no browser submit. |
+| Gmail outreach draft | done | `submission/student_partner_outreach_gmail_draft.md` | Uses owner Gmail alias; no send automation. |
+| Account ops runbook | done | `docs/ACCOUNT_OPS_RUNBOOK.md` | Vault/browser refs only; no raw passwords. |
+| Veloclaw git receipts | done | `evidence/veloclaw_state/receipts.ndjson` | Read-only snapshots for core, contest, and web repos. |
