@@ -2,6 +2,8 @@
 
 Target: 3-5 minutes.
 
+Shotlist: `submission/video_shotlist.csv`
+
 ## 0:00-0:20: Hook
 
 "Students do not need generic AI career advice. They need a transparent path
@@ -63,4 +65,6 @@ decision support: plan, proof, and responsible next action."
 - [ ] Plan tab visible.
 - [ ] Packet tab visible.
 - [ ] No private student proof visible.
+- [ ] AI tools and data disclosure drafted.
+- [ ] Build-window compliance log started from private copy.
 - [ ] Final video URL added to Devpost payload privately.

@@ -6,6 +6,8 @@ Verified on 2026-05-30.
 
 - USAII hackathon site: https://aihackathon.usaii.org/
 - USAII FAQ: https://aihackathon.usaii.org/faqs
+- USAII how it works: https://aihackathon.usaii.org/how-it-works
+- USAII terms: https://aihackathon.usaii.org/terms-of-use
 - Devpost overview/rules: https://usaii-global-ai-hackathon-2026.devpost.com/rules
 - Qualifier portal: https://qualifier.usaii.org/
 - Guardian consent page: https://aihackathon.usaii.org/guardian-consent-form
@@ -31,6 +33,12 @@ Verified on 2026-05-30.
   final submissions can use prototypes or demonstrations, synthetic/mock data is
   acceptable, and judging evaluates problem understanding, AI reasoning, design,
   impact, and responsible AI.
+- USAII FAQ/how-it-works describe qualifier practice shape as a short scenario
+  assessment with approximately 8 prompts, general themes of Health & Wellbeing,
+  Sustainability, and Community, and no prototype required.
+- USAII terms say teams that advance receive a unique qualifier code by email
+  on 2026-06-11; Devpost lists qualifier results on 2026-06-12, so the runbook
+  watches both dates.
 
 ## Local Evidence
 

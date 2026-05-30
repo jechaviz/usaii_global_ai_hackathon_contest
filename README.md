@@ -31,7 +31,7 @@ aprendizaje, portfolio y oportunidades reales.
 ## Estado prod local
 
 Estado: `ready_for_student_partner`
-Version competitiva: `v1.2.1`
+Version competitiva: `v1.3.0`
 
 Entregables principales:
 
@@ -46,6 +46,9 @@ Entregables principales:
 - Risks: `docs/RISKS.md`
 - Submission packet: `submission/SUBMISSION_PACKET.md`
 - Student-partner outreach: `submission/student_partner_outreach_gmail_draft.md`
+- Qualifier rehearsal: `submission/qualifier_rehearsal_kit.md`
+- Build-window compliance: `submission/build_window_compliance_log.template.md`
+- AI tools disclosure: `submission/ai_tools_disclosure.template.md`
 - Account ops: `docs/ACCOUNT_OPS_RUNBOOK.md`
 - Automatizacion WAIBAv: `automation/waiba/`
 

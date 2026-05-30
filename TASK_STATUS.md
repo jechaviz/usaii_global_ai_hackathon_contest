@@ -4,7 +4,7 @@ Fecha de creacion: 2026-05-30
 Track interno: `student_partner_track`
 Producto: `AI Study-to-Work Coach`
 Estado local: `ready_for_student_partner`
-Version competitiva: `v1.2.1`
+Version competitiva: `v1.3.0`
 
 ## Objetivo
 
@@ -36,6 +36,9 @@ USAII Global AI Hackathon 2026.
 - Risks: `docs/RISKS.md`.
 - Submission packet y form maps: `submission/`.
 - Student partner outreach kit: `submission/student_partner_outreach_gmail_draft.md`.
+- Qualifier rehearsal kit: `submission/qualifier_rehearsal_kit.md`.
+- Build-window compliance log: `submission/build_window_compliance_log.template.md`.
+- AI tools disclosure: `submission/ai_tools_disclosure.template.md`.
 - Account ops runbook: `docs/ACCOUNT_OPS_RUNBOOK.md`.
 - WAIBAv playbooks con final-submit gate: `automation/waiba/`.
 - Evidence pack: `evidence/`.
@@ -56,6 +59,7 @@ USAII Global AI Hackathon 2026.
 - WAIBAv debug receipts: Devpost, qualifier, Gmail outreach pass.
 - Veloclaw receipts: `evidence/veloclaw_state/receipts.ndjson`.
 - Judge readiness: 94/100.
+- Qualifier rehearsal: 8 prompts across Health & Wellbeing, Sustainability, and Community.
 - Decision delta: +29.
 - Risk reduction: 71%.
 - Web server: `http://127.0.0.1:4197/`.
@@ -83,6 +87,7 @@ Receipts:
 - [x] Submission payloads y form maps listos.
 - [x] Automatizacion WAIBAv preparada con no-submit gate.
 - [x] Student partner outreach draft y refs de cuenta preparados.
+- [x] Qualifier rehearsal, build-window log y AI disclosure preparados.
 - [x] QA local y evidence screenshots capturados.
 - [ ] Equipo real de 2-5 estudiantes elegibles confirmado.
 - [ ] Registro Devpost completado por miembros elegibles.

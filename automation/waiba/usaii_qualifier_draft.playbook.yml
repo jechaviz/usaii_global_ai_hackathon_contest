@@ -18,7 +18,7 @@ steps:
       action: Shell.Run
       register: template_check
       params:
-        command: "powershell -NoProfile -Command \"if (!(Test-Path '${PROJECT_DIR}/submission/qualifier_response_template.md')) { exit 2 }\""
+        command: "powershell -NoProfile -Command \"if (!(Test-Path '${PROJECT_DIR}/submission/qualifier_response_template.md')) { exit 2 }; if (!(Test-Path '${PROJECT_DIR}/submission/qualifier_rehearsal_kit.md')) { exit 3 }; if (!(Test-Path '${PROJECT_DIR}/submission/build_window_compliance_log.template.md')) { exit 4 }\""
         workdir: "${PROJECT_DIR}"
 
     - name: Write dry-run receipt
@@ -33,6 +33,8 @@ steps:
           Target: ${QUALIFIER_URL}
           Mode: debug dry-run
           Template: ${PROJECT_DIR}/submission/qualifier_response_template.md
+          Rehearsal kit: ${PROJECT_DIR}/submission/qualifier_rehearsal_kit.md
+          Build-window log: ${PROJECT_DIR}/submission/build_window_compliance_log.template.md
           Form map: ${PROJECT_DIR}/submission/qualifier_form_map.yml
           Final submit allowed: false
 

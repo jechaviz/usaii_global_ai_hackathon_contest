@@ -6,19 +6,21 @@
 - Register every member individually on Devpost.
 - Choose likely track based on highest education level.
 - Rehearse qualifier answers using `submission/qualifier_response_template.md`.
+- Run the eight-question drill in `submission/qualifier_rehearsal_kit.md`.
 - Keep this repo as a readiness scaffold, not the final competitive build.
 
 ## 2026-06-07 To 2026-06-10: AI Readiness Qualifier
 
 - Use one team session.
-- Choose the general area that best fits the team prompt.
+- Choose the general area that best fits the team prompt: Health & Wellbeing,
+  Sustainability, or Community.
 - Answer approximately 8 AI thinking prompts.
 - Cover problem, affected people, why AI helps, risks, ethics, and concise pitch.
 - Save score report and approval code privately.
 
-## 2026-06-12
+## 2026-06-11 To 2026-06-12
 
-- Confirm approval status.
+- Watch for the qualifier code email and Devpost/USAII result update.
 - Insert approval code privately in Devpost session only.
 - If not approved, stop external submission work and keep package as practice.
 
@@ -29,6 +31,7 @@
 - Create Devpost project from student lead account.
 - Invite teammates with registered emails.
 - Start a fresh build branch and log substantial work timestamps.
+- Start `submission/build_window_compliance_log.template.md` from a private copy.
 
 ## 2026-06-14 To 2026-06-21: Build Sprint
 

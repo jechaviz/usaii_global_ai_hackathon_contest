@@ -1,0 +1,9 @@
+timecode,screen,action,proof_point,risk_guard
+00:00-00:20,Demo title,Open public demo,Problem and promise,no private data visible
+00:20-00:55,Skill panel,Introduce synthetic student persona,Decision context and constraints,synthetic persona only
+00:55-01:45,Recommendation panel,Move one skill slider,AI-assisted fit and gap reasoning,no outcome guarantees
+01:45-02:40,Plan tab,Walk through four-week sprint,Portfolio proof and review gates,human approval named
+02:40-03:35,Judge tab,Show rubric and experiment numbers,Decision delta +29 and risk reduction 71%,baseline is illustrative
+03:35-04:15,Guardrails,Evidence graph and safeguards,Privacy/bias/hallucination controls,private proof excluded
+04:15-04:45,Packet tab,Show qualifier and submit gates,Build window and final-submit discipline,no final submit in demo
+04:45-05:00,Closing slide,State accountable student decision support,Plan proof next action,avoid overclaiming impact
