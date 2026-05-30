@@ -12,9 +12,11 @@ Local URL: `http://127.0.0.1:4197/`
 2. Adjust student skill sliders.
 3. Watch the recommended path, score, reasons, and gaps update.
 4. Open the plan tab to see a four-week study-to-portfolio sprint.
-5. Open the packet tab to verify qualifier, team gate, build window, deadline,
+5. Open the judge tab to see rubric fit, decision delta, risk reduction, and the
+   evidence graph.
+6. Open the packet tab to verify qualifier, team gate, build window, deadline,
    and final-submit status.
-6. Export the packet JSON for review.
+7. Export the packet JSON for review.
 
 ## Implementation
 
@@ -23,6 +25,9 @@ Local URL: `http://127.0.0.1:4197/`
 - `src/components/RecommendationPanel.vue`: recommendation, flow asset, reasons,
   and skill gaps.
 - `src/components/PlanTimeline.vue`: four-week plan.
+- `src/components/JudgePanel.vue`: rubric fit and baseline-vs-coach experiment.
+- `src/components/EvidenceGraphPanel.vue`: input, reasoning, output, control,
+  receipt chain.
 - `src/components/SubmissionPanel.vue`: packet readiness.
 - `src/components/GuardrailPanel.vue`: responsible AI guardrails.
 - `src/styles/app.css`: responsive layout and visual system.

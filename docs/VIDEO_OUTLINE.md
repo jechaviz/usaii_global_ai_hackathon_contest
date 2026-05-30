@@ -30,20 +30,28 @@ Show the Vue demo title and fit metrics.
 - Name the portfolio artifact and evidence checkpoints.
 - Point out mentor/peer/student review gates.
 
-## 2:40-3:25: Responsible AI
+## 2:40-3:35: Judge Mode
+
+- Open Judge tab.
+- Name rubric weights: 30% AI reasoning, 25% architecture, 20% problem, 15%
+  impact, 10% responsible AI.
+- Show baseline 57, coach 86, decision delta +29, risk cut 71%.
+- Show Evidence Graph: input, reasoning, output, human gate, receipt.
+
+## 3:35-4:15: Responsible AI
 
 - Open guardrails.
 - Mention no protected-trait inference, synthetic data, no guarantees, missing
   evidence, and human approval before outreach.
 - Name data/tools disclosure.
 
-## 3:25-4:20: Submission Readiness
+## 4:15-4:45: Submission Readiness
 
 - Open Packet tab.
 - Show qualifier ready, team gate, build window, deadline, final submit gated.
 - Mention Devpost/WAIBAv draft automation stops before final submit.
 
-## 4:20-4:50: Close
+## 4:45-5:00: Close
 
 "AI Study-to-Work Coach turns AI from answer generator into accountable student
 decision support: plan, proof, and responsible next action."

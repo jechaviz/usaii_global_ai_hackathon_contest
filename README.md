@@ -31,11 +31,15 @@ aprendizaje, portfolio y oportunidades reales.
 ## Estado prod local
 
 Estado: `ready_for_student_partner`
+Version competitiva: `v1.1.0`
 
 Entregables principales:
 
 - AI idea: `docs/PRODUCT_AI_IDEA.md`
 - Demo MVP: `docs/DEMO_MVP.md`
+- Judge Mode: `docs/JUDGE_MODE.generated.md`
+- Competitive battlecard: `docs/COMPETITIVE_BATTLECARD.md`
+- Experiment design: `docs/EXPERIMENT_DESIGN.md`
 - Elegibilidad estudiantil: `docs/ELIGIBILITY_STUDENT_CHECKLIST.md`
 - Plan qualifier/hackathon: `docs/HACKATHON_PLAN.md`
 - Video outline: `docs/VIDEO_OUTLINE.md`

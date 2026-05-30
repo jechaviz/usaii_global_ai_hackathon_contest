@@ -31,3 +31,11 @@ Fit score: 81/100
 - Show why every recommendation was made, including weak evidence and missing inputs.
 - Keep career actions human-approved before outreach, applications, or public portfolio changes.
 - Warn that the system supports decisions and does not guarantee jobs, admissions, or awards.
+
+## Evidence Graph
+
+- synthetic_demo: Student-stated goal (input) - Profile goals, interests, constraints and skill ratings.
+- computed: Skill-gap score (reasoning) - Required skills compared against current confidence.
+- planned: Portfolio artifact (output) - A verified plan, portfolio rubric, and outreach-safe opportunity shortlist.
+- required: Human approval gate (control) - Student approves outreach, public claims and sensitive data use.
+- ready: Judge evidence receipt (evidence) - Generated experiment, readiness report and demo screenshots.

@@ -4,6 +4,7 @@ Fecha de creacion: 2026-05-30
 Track interno: `student_partner_track`
 Producto: `AI Study-to-Work Coach`
 Estado local: `ready_for_student_partner`
+Version competitiva: `v1.1.0`
 
 ## Objetivo
 
@@ -27,6 +28,8 @@ USAII Global AI Hackathon 2026.
 - AI idea y decision log: `docs/PRODUCT_AI_IDEA.md`.
 - Demo MVP Vue3 CDN + SFC + UnoCSS: `C:\git\websites\usaii_global_ai_hackathon`.
 - V product core: `C:\git\v_projects\usaii_global_ai_hackathon`.
+- Judge Mode con baseline-vs-coach y rubrica: `docs/JUDGE_MODE.generated.md`.
+- Competitive battlecard: `docs/COMPETITIVE_BATTLECARD.md`.
 - Checklist de elegibilidad estudiantil: `docs/ELIGIBILITY_STUDENT_CHECKLIST.md`.
 - Plan qualifier/hackathon: `docs/HACKATHON_PLAN.md`.
 - Video outline 3-5 min: `docs/VIDEO_OUTLINE.md`.
@@ -47,11 +50,16 @@ USAII Global AI Hackathon 2026.
 - Product core: `v test .` pass.
 - Product core generator: `v run .\cmd\usaii generate` pass.
 - Web smoke: `npx playwright test --reporter=line` pass.
+- Judge readiness: 94/100.
+- Decision delta: +29.
+- Risk reduction: 71%.
 - Web server: `http://127.0.0.1:4197/`.
 
 Receipts:
 
 - `evidence/readiness_report.json`
+- `evidence/competitive_experiment.json`
+- `evidence/judge_readiness.json`
 - `evidence/web_demo_desktop.png`
 - `evidence/web_demo_mobile.png`
 - `evidence/devpost_payload_preview_v.json`
