@@ -1,0 +1,30 @@
+target: https://usaii-global-ai-hackathon-2026.devpost.com/
+mode: draft_only_until_authorized_student_session
+required_private_inputs:
+  - qualifier_approval_code
+  - student_lead_devpost_session
+  - final_video_url
+  - final_demo_url_or_walkthrough
+  - teammate_devpost_emails
+fields:
+  project_title: AI Study-to-Work Coach
+  tagline: Explainable student pathfinding from study plan to portfolio proof.
+  built_with:
+    - Vlang
+    - Vue 3 CDN
+    - UnoCSS
+    - WAIBAv
+    - Devpost
+  description_file: submission/SUBMISSION_PACKET.md
+  source_repo: REPLACE_WITH_PUBLIC_REPO_URL
+  demo_url: REPLACE_WITH_PUBLIC_DEMO_URL
+  video_url: REPLACE_WITH_3_TO_5_MIN_VIDEO_URL
+  qualifier_code: PRIVATE_REQUIRED_AFTER_QUALIFIER
+  track_selection: highest_education_level_represented_by_team
+  ai_architecture: docs/PRODUCT_AI_IDEA.md
+  responsible_ai: docs/PRODUCT_AI_IDEA.md
+  tools_and_data: synthetic_public_demo_data_and_disclosed_ai_tools
+automation:
+  dry_run_default: true
+  final_submit_allowed: false
+  final_gate: USAII_DEVPOST_SUBMIT_AUTHORIZED=YES

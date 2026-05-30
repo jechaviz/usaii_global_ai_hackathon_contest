@@ -1,0 +1,9 @@
+{
+	"team_name":	"AI Study-to-Work Coach",
+	"idea_summary":	"We are building an explainable AI coach that helps students convert interests and skill confidence into a responsible learning plan, portfolio artifact, and human-approved opportunity shortlist.",
+	"ai_use":	"AI assists preference extraction, skill-gap reasoning, rubric generation, opportunity matching, and responsible AI critique. The demo exposes scores, gaps, guardrails, and approval gates.",
+	"ethics":	"We avoid protected-trait inference, use synthetic public personas, require human review before outreach, and clearly warn that recommendations support decisions rather than guarantee outcomes.",
+	"data_boundary":	"Public demo data is synthetic. Real student records, school proof, age verification, guardian contacts, and account credentials stay private and are never committed.",
+	"student_gate":	"Every team member must be a currently enrolled eligible student and registered on Devpost before the qualifier.",
+	"final_authority":	"Only the eligible student lead may perform final external submissions from an authenticated account."
+}

@@ -1,0 +1,65 @@
+metadata:
+  name: usaii-devpost-draft
+  description: Prepare USAII Devpost draft values and stop before final submission.
+
+variables:
+  PROJECT_DIR: "C:/git/v_projects/contests/worth_it/usaii_global_ai_hackathon"
+  PRODUCT_DIR: "C:/git/v_projects/usaii_global_ai_hackathon"
+  OUTPUT_DIR: "${PROJECT_DIR}/automation/evidence/devpost-draft"
+  DEVPOST_URL: "https://usaii-global-ai-hackathon-2026.devpost.com/"
+
+steps:
+  debug:
+    - name: Ensure output directory
+      action: FS.EnsureDir
+      params:
+        path: "${OUTPUT_DIR}"
+
+    - name: Generate dry-run payload preview
+      action: Shell.Run
+      register: payload_preview
+      params:
+        command: "v run ./cmd/usaii form --dry-run --worth-it ${PROJECT_DIR}"
+        workdir: "${PRODUCT_DIR}"
+
+    - name: Write dry-run receipt
+      action: FS.WriteText
+      register: devpost_receipt
+      params:
+        path: "${OUTPUT_DIR}/devpost_draft_receipt.md"
+        overwrite: true
+        text: |
+          # USAII Devpost Draft Receipt
+
+          Target: ${DEVPOST_URL}
+          Mode: debug dry-run
+          Payload preview: ${PROJECT_DIR}/evidence/devpost_payload_preview_v.json
+          Form map: ${PROJECT_DIR}/submission/devpost_form_map.yml
+          Final submit allowed: false
+
+          Required before production:
+          - 2-5 eligible students registered on Devpost.
+          - Valid qualifier approval code.
+          - Final demo/video URLs.
+          - Explicit student lead review.
+
+    - action: Note
+      params:
+        text: "USAII Devpost dry-run prepared. Debug mode does not open browser or submit."
+
+  prod:
+    - name: Generate latest dry-run payload preview
+      action: Shell.Run
+      params:
+        command: "v run ./cmd/usaii form --dry-run --worth-it ${PROJECT_DIR}"
+        workdir: "${PRODUCT_DIR}"
+
+    - name: Open Devpost in authorized session
+      action: Browser.Open
+      params:
+        url: "${DEVPOST_URL}"
+        headless: false
+
+    - action: Note
+      params:
+        text: "Fill fields from submission/devpost_form_map.yml and stop before final submit unless the student lead explicitly authorizes it."

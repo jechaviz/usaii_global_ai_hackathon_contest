@@ -1,0 +1,19 @@
+target: https://qualifier.usaii.org/
+mode: draft_only_until_authorized_student_session
+window:
+  opens: 2026-06-07 10:00 ET
+  closes: 2026-06-10 23:59 ET
+private_inputs:
+  - registered_team_members
+  - student_lead_session
+  - official_scenario_prompt
+prepared_answers:
+  team_name: AI Study-to-Work Coach
+  idea_summary: submission/qualifier_response_template.md
+  ai_use: submission/qualifier_response_template.md
+  ethics: submission/qualifier_response_template.md
+  data_boundary: submission/qualifier_response_template.md
+automation:
+  dry_run_default: true
+  final_submit_allowed: false
+  final_gate: USAII_QUALIFIER_SUBMIT_AUTHORIZED=YES

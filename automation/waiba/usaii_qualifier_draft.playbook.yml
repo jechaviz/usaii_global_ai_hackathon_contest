@@ -1,0 +1,58 @@
+metadata:
+  name: usaii-qualifier-draft
+  description: Prepare USAII AI Readiness Qualifier draft and stop before final submission.
+
+variables:
+  PROJECT_DIR: "C:/git/v_projects/contests/worth_it/usaii_global_ai_hackathon"
+  OUTPUT_DIR: "${PROJECT_DIR}/automation/evidence/qualifier-draft"
+  QUALIFIER_URL: "https://qualifier.usaii.org/"
+
+steps:
+  debug:
+    - name: Ensure output directory
+      action: FS.EnsureDir
+      params:
+        path: "${OUTPUT_DIR}"
+
+    - name: Validate qualifier template exists
+      action: Shell.Run
+      register: template_check
+      params:
+        command: "powershell -NoProfile -Command \"if (!(Test-Path '${PROJECT_DIR}/submission/qualifier_response_template.md')) { exit 2 }\""
+        workdir: "${PROJECT_DIR}"
+
+    - name: Write dry-run receipt
+      action: FS.WriteText
+      register: qualifier_receipt
+      params:
+        path: "${OUTPUT_DIR}/qualifier_draft_receipt.md"
+        overwrite: true
+        text: |
+          # USAII Qualifier Draft Receipt
+
+          Target: ${QUALIFIER_URL}
+          Mode: debug dry-run
+          Template: ${PROJECT_DIR}/submission/qualifier_response_template.md
+          Form map: ${PROJECT_DIR}/submission/qualifier_form_map.yml
+          Final submit allowed: false
+
+          Required before production:
+          - Official scenario prompt visible in qualifier portal.
+          - Registered team of 2-5 eligible students.
+          - Student lead confirms answers.
+          - USAII_QUALIFIER_SUBMIT_AUTHORIZED=YES only for the authorized session.
+
+    - action: Note
+      params:
+        text: "USAII qualifier draft prepared. Debug mode does not open browser or submit."
+
+  prod:
+    - name: Open qualifier in authorized session
+      action: Browser.Open
+      params:
+        url: "${QUALIFIER_URL}"
+        headless: false
+
+    - action: Note
+      params:
+        text: "Use submission/qualifier_response_template.md only as draft material, adapt to the official prompt, and stop before final submit unless the student lead explicitly authorizes it."

@@ -1,0 +1,12 @@
+{
+  "student_lead_name": "PRIVATE_REQUIRED",
+  "student_lead_email": "PRIVATE_REQUIRED",
+  "devpost_registered_email": "PRIVATE_REQUIRED",
+  "team_member_emails": ["PRIVATE_REQUIRED"],
+  "education_track": "PRIVATE_REQUIRED",
+  "qualifier_approval_code": "PRIVATE_REQUIRED_AFTER_QUALIFIER",
+  "final_video_url": "PRIVATE_REQUIRED",
+  "final_demo_url": "PRIVATE_REQUIRED",
+  "student_proof_location": "DO_NOT_COMMIT",
+  "guardian_consent_location_if_under_18": "DO_NOT_COMMIT"
+}
